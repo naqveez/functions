@@ -1,4 +1,4 @@
-#(""""""""FUNCTIONS"""""""")
+#('""""""""FUNCTIONS""""""""')
 #def greet():
     #print("good morning")
 #greet()
@@ -47,11 +47,52 @@ def pizza(crust, *topping): # single * means is aa tuple
 pizza("thick","green olives","chicken","jalepeno")
 '''
 
-def pizza(crust, **topping): # double * means is a dictionary
-    print("you have orderd pizza with", crust, "crust and the following toppings :")
-    for key, value in topping.items():
-        print(key,":",value)
-pizza("thick",topping1 ="green olives", topping2 ="chicken",topping3 ="jalepeno")
+# def pizza(crust, **topping): # double * means is a dictionary
+#     print("you have orderd pizza with", crust, "crust and the following toppings :")
+#     for key, value in topping.items():
+#         print(key,":",value)
+# pizza("thick",topping1 ="green olives", topping2 ="chicken",topping3 ="jalepeno")
+#f = 1
+# def fact(n):
+#     for i in range(1,n+1):
+#         f = f*i
+#         return f
+#     print("factorial of" ,n , "is" f)
+# fact(5)
+
+# 23/june/19
+
+# def calculate_tax(percent):
+#     def actual_tax(salary):
+#         return salary*percent
+#      return actual_tax
+#
+# actual_tax_fn = calculate_tax(.30)
+# print(actual_tax_fn)
+# print(actual_tax_fn(100000))
 
 
+
+# CALCULATOR
+# def parent_function(num1, num2, op):
+#     def add(n1, n2):
+#         return n1 + n2
+#
+#     def subtract(n1 , n2):
+#         return n1 - n2
+#
+#     if op == '+':
+#         return add(num1, num2)
+#     elif op == "-" :
+#         return subtract(num1 , num2)
+# print(parent_function(2 ,4 , "-"))
+
+
+# while loop
+import random
+temp = random.randint(30, 50)
+while temp < 45:
+    print("its better weather, temp =", temp)
+    temp = random.randint(30, 50)
+    print("i came back due to hot weather, temp =", temp)
 
